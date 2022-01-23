@@ -11,8 +11,12 @@
 </div>
 <div class="login">
  <h2>Come find out!</h2>
-    <input type="text" placeholder="insert your name">
-    <button>Play</button>
+    <form id="login-form"> 
+        <input type="text" name="name" id="name" placeholder="Insert your name" required>
+        <input type="password" name="password" id="password" placeholder="Insert your password" required>
+        <input type="submit" value="Play">
+    </form>
 </div>
+<script src="main.js"></script>
 </body>
 </html>

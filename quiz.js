@@ -1,6 +1,7 @@
 const questions = [
     {
-        question: "What field of environmental work has Jane Goodall dedicated her life to?",
+        question:
+            "What field of environmental work has Jane Goodall dedicated her life to?",
         checkboxOne: {
             text: "To the study of primates in Tanzania",
             id: 1,
@@ -30,10 +31,11 @@ const questions = [
             text: "Sophie Germain",
             id: 3,
         },
-        solution: 1,
+        solution: 3,
     },
     {
-        question: "Which famous scientist wrote: 'Bacteria were the inventors, on a reduced scale, of all the chemical systems essential for life'?",
+        question:
+            "Which famous scientist wrote: 'Bacteria were the inventors, on a reduced scale, of all the chemical systems essential for life'?",
         checkboxOne: {
             text: "Gertrude B. Elion",
             id: 1,
@@ -49,7 +51,8 @@ const questions = [
         solution: 2,
     },
     {
-        question: "What were Katherine Johnson, Dorothy Vaughan and Mary Jackson famous for?",
+        question:
+            "What were Katherine Johnson, Dorothy Vaughan and Mary Jackson famous for?",
         checkboxOne: {
             text: "They invented a communication system based on ones and zeros",
             id: 1,
@@ -81,7 +84,8 @@ const questions = [
         solution: 1,
     },
     {
-        question: "This woman was invited to work on the Manhattan Project (1942–1955) in the United States. However, he opposed the atomic bomb and rejected the offer. Who are we talking about?",
+        question:
+            "This woman was invited to work on the Manhattan Project (1942–1955) in the United States. However, he opposed the atomic bomb and rejected the offer. Who are we talking about?",
         checkboxOne: {
             text: "Dorothy Hodgkin",
             id: 1,

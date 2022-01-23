@@ -1,32 +1,80 @@
 const questions = [
     {
-        question: "Pregunta número 1?",
+        question: "What field of environmental work has Jane Goodall dedicated her life to?",
         checkboxOne: {
-            text: "Respuesta 1a",
+            text: "To the study of primates in Tanzania",
             id: 1,
         },
         checkboxTwo: {
-            text: "Respuesta 1b",
+            text: "To the study of climate change",
             id: 2,
         },
         checkboxThree: {
-            text: "Respuesta 1c correcta",
+            text: "To the study of African predators",
             id: 3,
         },
-        solution: 3,
+        solution: 1,
     },
     {
-        question: "Pregunta número 2?",
+        question: "Which famous scientist wrote: 'Bacteria were the inventors, on a reduced scale, of all the chemical systems essential for life'?",
         checkboxOne: {
-            text: "Respuesta 2a",
+            text: "Gertrude B. Elion",
             id: 1,
         },
         checkboxTwo: {
-            text: "Respuesta 2b correcta",
+            text: "Lynn Margulis",
             id: 2,
         },
         checkboxThree: {
-            text: "Respuesta 2c",
+            text: "Mary Leakey",
+            id: 3,
+        },
+        solution: 2,
+    },
+    {
+        question: "What were Katherine Johnson, Dorothy Vaughan and Mary Jackson famous for?",
+        checkboxOne: {
+            text: "They invented a communication system based on ones and zeros",
+            id: 1,
+        },
+        checkboxTwo: {
+            text: "They made it possible for man to land on the Moon",
+            id: 2,
+        },
+        checkboxThree: {
+            text: "They were the first women in history to set foot in a university",
+            id: 3,
+        },
+        solution: 2,
+    },
+    {
+        question: "What was Rosalind Franklin famous for?",
+        checkboxOne: {
+            text: "He discovered that the DNA molecule existed in a helical conformation",
+            id: 1,
+        },
+        checkboxTwo: {
+            text: "He was part of the team that discovered nuclear fission",
+            id: 2,
+        },
+        checkboxThree: {
+            text: "Contributed to the technology that led to the development of the atomic bomb",
+            id: 3,
+        },
+        solution: 1,
+    },
+    {
+        question: "This woman was invited to work on the Manhattan Project (1942–1955) in the United States. However, he opposed the atomic bomb and rejected the offer. Who are we talking about?",
+        checkboxOne: {
+            text: "Dorothy Hodgkin",
+            id: 1,
+        },
+        checkboxTwo: {
+            text: "Lise Meitner",
+            id: 2,
+        },
+        checkboxThree: {
+            text: "Mary Leakey",
             id: 3,
         },
         solution: 2,

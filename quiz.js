@@ -46,7 +46,8 @@ const answerTwoButton = document.querySelector("#answer-2");
 const answerThreeButton = document.querySelector("#answer-3");
 
 const correctAnswers = document.querySelector("#correct-answers");
-const scoreCounter = document.querySelector("#score-counter");
+const quizScoreCounter = document.querySelector("#quiz-score-counter");
+const userScoreCounter = document.querySelector("#user-score-counter");
 
 ////Start quiz button
 function startQuizBtnHandleClick(event) {
@@ -109,7 +110,8 @@ function nextQuestionBtnHandleClick(event) {
         correctAnswers.innerHTML = `${calculateCorrectAnswers()} / ${
             quizPunctuation.length
         }`;
-        scoreCounter.innerHTML = `${calculateCorrectAnswers() * 100}`;
+        quizScoreCounter.innerHTML = `${calculateQuizScore()}`;
+        userScoreCounter.innerHTML = `${calculateUserScore()}`;
     }
 }
 
@@ -143,4 +145,12 @@ function calculateCorrectAnswers() {
         if (i === 1) correctAnswers++;
     });
     return correctAnswers;
+}
+
+function calculateQuizScore() {
+    return calculateCorrectAnswers() * 100;
+}
+
+function calculateUserScore() {
+    return +sessionStorage.getItem("score") + calculateQuizScore();
 }

@@ -1,83 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Femhoot</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="./female.png" type="image/x-icon">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Femhoot</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" href="./female.png" type="image/x-icon" />
+    </head>
+    <body>
+        <header>
+            <div class="header-container">
+                <div class="user-info">
+                    <div class="inline">
+                        <img src="./user.png" alt="user-avatar" />
+                    </div>
+                    <div class="inline">
+                        <p class="user-name" id="user-name">Username</p>
+                    </div>
+                </div>
+                <div class="fun-fact">
+                    <div class="inline">
+                        <p class="fun-fact-text">
+                            Click on the button to generate a fun fact about
+                            women in tech
+                        </p>
+                    </div>
+                    <div class="inline"></div>
+                    <button
+                        onclick="newFactBtnHandleClick(event)"
+                    >
+                        New Fact
+                    </button>
+                </div>
+            </div>
+        </header>
 
-<header>
-    <div class="header-container">
-    <div class="user-info">
-        <div class="inline"><img src="./user.png" alt="user-avatar"/></div>
-        <div class="inline"><p class="user-name" id="user-name">Username</p></div>
-    </div>
-    <div class="fun-fact">
-        <div class="inline"><p class="fun-fact-text">Fun fact!</p></div>
-        <div class="inline"></div><button
-            class="fun-fact-gen"
-            onclick="newFactBtnHandleClick(event)"
-        >
-            Fun fact generator
-        </button></div>
-    </div>
-</header>
+        <section id="before-quiz-section">
+            <button
+                class="start-quiz-button"
+                onclick="startQuizBtnHandleClick(event)"
+            >
+                Start Quiz
+            </button>
+        </section>
 
-<section id="before-quiz-section">
-    <button onclick="startQuizBtnHandleClick(event)">Start Quiz</button>
-</section>
+        <section id="quiz-section" class="display-none">
+            <div>
+                <h1 id="question-text">WHAT'S A QUESTION?</h1>
+                <div class="answer-container">
+                    <button
+                        class="answer"
+                        id="answer-1"
+                        value="1"
+                        onclick="answerHandleClick(event)"
+                    >
+                        ANSWER #1
+                    </button>
+                    <button
+                        class="answer"
+                        id="answer-2"
+                        value="2"
+                        onclick="answerHandleClick(event)"
+                    >
+                        ANSWER #2
+                    </button>
+                    <button
+                        class="answer"
+                        id="answer-3"
+                        value="3"
+                        onclick="answerHandleClick(event)"
+                    >
+                        ANSWER #3
+                    </button>
+                </div>
+                <button onclick="nextQuestionBtnHandleClick(event)">
+                    Next
+                </button>
+            </div>
+        </section>
 
-<section  id="quiz-section" class="question display-none">
-    <h1 id="question-text">WHAT'S A QUESTION?</h1>
-    <div class="answer-container">
-        <button
-            class="answer"
-            id="answer-1"
-            value="1"
-            onclick="answerHandleClick(event)"
-        >
-            ANSWER #1
-        </button>
-        <button
-            class="answer"
-            id="answer-2"
-            value="2"
-            onclick="answerHandleClick(event)"
-        >
-            ANSWER #2
-        </button>
-        <button
-            class="answer"
-            id="answer-3"
-            value="3"
-            onclick="answerHandleClick(event)"
-        >
-            ANSWER #3
-        </button>
-    </div>
-    <button onclick="nextQuestionBtnHandleClick(event)">Next</button>
-</section>
+        <section id="after-quiz-section" class="display-none">
+            <div>
+                <h1>Congratulations, you've just finish the quiz!</h1>
+                <p>Correct answers: <span id="correct-answers"></span></p>
+                <p>Score: <span id="quiz-score-counter"></span></p>
+                <p>User Score: <span id="user-score-counter"></span></p>
+                <button onclick="returnHome(event)">Home</button>
+            </div>
+        </section>
 
-<section id="after-quiz-section" class="display-none">
-    <h1>Congratulations, you've just finish the quiz!</h1>
-    <p>Correct answers: <span id="correct-answers"></span></p>
-    <p>Score: <span id="quiz-score-counter"></span></p>
-    <p>User Score: <span id="user-score-counter"></span></p>
-    <button onclick="returnHome(event)">Home</button>
-</section>
-
-<footer>
-    <div class="footer-info">
-        <h1>Femhoot.</h1>
-    <p>&copy; Copyright 2022 </p>
-    <h1>Created by <a  target=”_blank” attribute href="https://github.com/candymd/femhoot-web">Team 9</a></h1>
-    <p>Terms & Privacy</p>
-</div>
-
-</footer>
-<!-- 
+        <footer>
+            <div class="footer-info">
+                <h1>Femhoot.</h1>
+                <p>&copy; Copyright 2022</p>
+                <h1>
+                    Created by
+                    <a
+                        target="”_blank”"
+                        attribute
+                        href="https://github.com/candymd/femhoot-web"
+                        >Team 9</a
+                    >
+                </h1>
+                <p>Terms & Privacy</p>
+            </div>
+        </footer>
+        <!-- 
 <footer>
     <div class="footer-container">
     <div class="footer-info">
@@ -114,9 +141,8 @@
 
     </footer>
 -->
-<script src="main.js"></script>
-<script src="facts.js"></script>
-<script src="quiz.js"></script>
-
-</body>
+        <script src="main.js"></script>
+        <script src="facts.js"></script>
+        <script src="quiz.js"></script>
+    </body>
 </html>

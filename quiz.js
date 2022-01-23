@@ -1,35 +1,86 @@
 const questions = [
     {
-        question: "Pregunta número 1?",
+        question:
+            "This woman studied Maths secretly and corresponded with the most relevant researchers of her time, always under a pseudonym. We are talking about...",
         checkboxOne: {
-            text: "Respuesta 1a",
+            text: "Ada Lovelace",
             id: 1,
         },
         checkboxTwo: {
-            text: "Respuesta 1b",
+            text: "Lucretia Mott",
             id: 2,
         },
         checkboxThree: {
-            text: "Respuesta 1c correcta",
+            text: "Sophie Germain",
             id: 3,
         },
         solution: 3,
     },
     {
-        question: "Pregunta número 2?",
+        question:
+            "Actress Hedy Lamarr was the first woman to star naked in Film  History (Ecstasy, Gustav Machatý, 1933). ¿What other achievement can be attributed to her?",
         checkboxOne: {
-            text: "Respuesta 2a",
+            text: "She was the first woman programmer",
             id: 1,
         },
         checkboxTwo: {
-            text: "Respuesta 2b correcta",
+            text: "She invented the basis for Wifi, Bluetooth and GPS",
             id: 2,
         },
         checkboxThree: {
-            text: "Respuesta 2c",
+            text: "She created a communication system based on ones and zeros",
             id: 3,
         },
         solution: 2,
+    },
+    {
+        question:
+            "Who wrote the ‘Silent Spring’ (1962), one of the most influential books for the modern environmental movement?",
+        checkboxOne: {
+            text: "Rachel Carson",
+            id: 1,
+        },
+        checkboxTwo: {
+            text: "Lynn Margulis",
+            id: 2,
+        },
+        checkboxThree: {
+            text: "Alice Ball",
+            id: 3,
+        },
+        solution: 1,
+    },
+    {
+        question: "Who is considered the first scientific woman in history?",
+        checkboxOne: {
+            text: "Hipatia de Alejandría",
+            id: 1,
+        },
+        checkboxTwo: {
+            text: "Themistoclea de Delfos",
+            id: 2,
+        },
+        checkboxThree: {
+            text: "Aspasia de Mileto",
+            id: 3,
+        },
+        solution: 1,
+    },
+    {
+        question: "Who was the first woman astronaut in history?",
+        checkboxOne: {
+            text: "Jocelyn Bell",
+            id: 1,
+        },
+        checkboxTwo: {
+            text: "Dorothy Crowfoot Hodgkin",
+            id: 2,
+        },
+        checkboxThree: {
+            text: "Valentina Tereshkova",
+            id: 3,
+        },
+        solution: 3,
     },
 ];
 let questionIndex;

@@ -6,6 +6,11 @@
 
 body {
     background: #845EC2;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    font-family: 'Monument Extended';
 }
 
 header {
@@ -16,7 +21,6 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-family: 'Monument Extended';
     padding: 10px;
 }
 
@@ -47,22 +51,27 @@ img {
     padding-top: 6px;
 }
 
-.fun-fact-gen {
-    display: inline-block;
-    padding: 5px;
-    padding-top: 7px;
-}
-
 .display-none {
     display: none;
 }
 
-.question {
+section {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.start-quiz-button {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+#quiz-section {
     height: 80vh;
     text-align: center;
-    padding-top: 150px;
-    font-family: 'Monument Extended';
-    margin: 10px 20px;
 }
 
 .answer-container {
@@ -87,12 +96,20 @@ img {
     background: rgb(252, 252, 252);
 }
 
+#after-quiz-section h1 {
+    margin-bottom: 0.2rem;
+}
+
+#after-quiz-section button {
+    margin-top: 0.5rem;
+}
+
 button {
-    font-family: 'Monument Extended';
     cursor: pointer;
     border-radius: 15px;
     border: none;
     transition: all 0.3s ease-in-out;
+    padding: 0.5rem;
 }
 
 button:hover {
@@ -102,7 +119,6 @@ button:hover {
 
 footer {
     position: relative;
-    font-family: 'Monument Extended';
 }
 
 /* Footer */
@@ -121,47 +137,6 @@ footer a {
     text-decoration: none;
     color: teal;
 }
-
-/* Footer
-footer{
-    padding-bottom: 3px 3px;
-}
-
-footer a {
-    text-decoration: none;
-    color: teal;
-}
-
-.footer-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px 10px;
-}
-.footer-info {
-    padding: 10px;
-    flex: 25%;
-}
-
-.footer-info h1{
-    font-size: 14px;
-    font-family: 'Apparel bold';
-}
-
-.footer-info p{
-    font-size: 14px;
-    font-family: 'Apparel light';
-}
-
-*/
-
-
-
-
-
-
-
 
 
 @media (max-width: 800px) {

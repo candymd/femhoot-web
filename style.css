@@ -53,6 +53,9 @@ img {
     padding-top: 7px;
 }
 
+.display-none {
+    display: none;
+}
 
 .question {
     height: 80vh;

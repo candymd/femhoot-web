@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <title>Femhoot</title>
+        <link href="styles.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <header>
@@ -20,8 +21,10 @@
                 </button>
             </div>
         </header>
-        <section>
+        <section id="before-quiz-section">
             <button onclick="startQuizBtnHandleClick(event)">Start Quiz</button>
+        </section>
+        <section  id="quiz-section" class="display-none">
             <h1 id="question-text">WHAT'S A QUESTION?</h1>
             <div>
                 <button
@@ -35,7 +38,7 @@
                 <button
                     class="answer"
                     id="answer-2"
-                    value="1"
+                    value="2"
                     onclick="answerHandleClick(event)"
                 >
                     ANSWER #2
@@ -43,13 +46,18 @@
                 <button
                     class="answer"
                     id="answer-3"
-                    value="1"
+                    value="3"
                     onclick="answerHandleClick(event)"
                 >
                     ANSWER #3
                 </button>
             </div>
             <button onclick="nextQuestionBtnHandleClick(event)">Next</button>
+        </section>
+        <section id="after-quiz-section" class="display-none">
+            <h1>Congratulations, you've just finish the quiz!</h1>
+            <p>Correct answers: <span id="correct-answers"></span></p>
+            <p>Score: <span id="score-counter"></span></p>
         </section>
         <footer>
             <p>Femhoot 2022</p>

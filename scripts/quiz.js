@@ -33,22 +33,33 @@ const questions = [
     },
 ];
 let questionIndex;
-let quizPunctuation;
+let quizPunctuation = [];
 
 //Getting DOM elements
+const beforeQuizSection = document.querySelector("#before-quiz-section");
+const quizSection = document.querySelector("#quiz-section");
+const afterQuizSection = document.querySelector("#after-quiz-section");
+
 const questionText = document.querySelector("#question-text");
 const answerOneButton = document.querySelector("#answer-1");
 const answerTwoButton = document.querySelector("#answer-2");
 const answerThreeButton = document.querySelector("#answer-3");
 
+const correctAnswers = document.querySelector("#correct-answers");
+const scoreCounter = document.querySelector("#score-counter");
+
 ////Start quiz button
 function startQuizBtnHandleClick(event) {
     event.preventDefault();
     const question = startQuiz();
+
     questionText.innerHTML = question.question;
     answerOneButton.innerHTML = question.checkboxOne.text;
     answerTwoButton.innerHTML = question.checkboxTwo.text;
     answerThreeButton.innerHTML = question.checkboxThree.text;
+
+    beforeQuizSection.classList.add("display-none");
+    quizSection.classList.remove("display-none");
 }
 
 ////Submit answer button
@@ -92,13 +103,20 @@ function nextQuestionBtnHandleClick(event) {
 
         answerThreeButton.innerHTML = question.checkboxThree.text;
         answerThreeButton.style.backgroundColor = "white";
+    } else {
+        quizSection.classList.add("display-none");
+        afterQuizSection.classList.remove("display-none");
+        correctAnswers.innerHTML = `${calculateCorrectAnswers()} / ${
+            quizPunctuation.length
+        }`;
+        scoreCounter.innerHTML = `${calculateCorrectAnswers() * 100}`;
     }
 }
 
 //Funciones auxiliares
 function startQuiz() {
     questionIndex = 0;
-    quizPunctuation = 0;
+    quizPunctuation = [];
     return questions[questionIndex];
 }
 
@@ -112,5 +130,17 @@ function newQuestionGenerator() {
 }
 
 function checkAnswers(answer, solution) {
-    if (answer === solution) quizPunctuation++;
+    if (answer === solution) {
+        quizPunctuation.push(1);
+    } else {
+        quizPunctuation.push(0);
+    }
+}
+
+function calculateCorrectAnswers() {
+    let correctAnswers = 0;
+    quizPunctuation.forEach((i) => {
+        if (i === 1) correctAnswers++;
+    });
+    return correctAnswers;
 }

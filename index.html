@@ -1,32 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Femhoot</title>
-</head>
-<body>
-<header>
-    <div class="user-info">
-        <img src="" alt="user-avatar"/>
-        <p class="user-name">Username</p>
-    </div>
-    <div class="fun-fact">
-        <p class="fun-fact-text">Fun fact!</p>
-        <button class="fun-fact-gen" onclick="newFactBtnHandleClick(event)">Fun fact generator</button>
-    </div>
-</header>
-<section>
-    <h1>WHAT'S A QUESTION?</h1>
-    <div>
-        <span class="answer">ANSWER #1</span>
-        <span class="answer">ANSWER #2</span>
-        <span class="answer">ANSWER #3</span>
-    </div>
-</section>
-<footer>
-    <p>Femhoot 2022</p>
-</footer>
-<script src="scripts/facts.js"></script>
-<script src="scripts/quiz.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Femhoot</title>
+    </head>
+    <body>
+        <header>
+            <div class="user-info">
+                <img src="" alt="user-avatar" />
+                <p class="user-name">Username</p>
+            </div>
+            <div class="fun-fact">
+                <p class="fun-fact-text">Fun fact!</p>
+                <button
+                    class="fun-fact-gen"
+                    onclick="newFactBtnHandleClick(event)"
+                >
+                    Fun fact generator
+                </button>
+            </div>
+        </header>
+        <section>
+            <button onclick="startQuizBtnHandleClick(event)">Start Quiz</button>
+            <h1 id="question-text">WHAT'S A QUESTION?</h1>
+            <div>
+                <button
+                    class="answer"
+                    id="answer-1"
+                    value="1"
+                    onclick="answerHandleClick(event)"
+                >
+                    ANSWER #1
+                </button>
+                <button
+                    class="answer"
+                    id="answer-2"
+                    value="1"
+                    onclick="answerHandleClick(event)"
+                >
+                    ANSWER #2
+                </button>
+                <button
+                    class="answer"
+                    id="answer-3"
+                    value="1"
+                    onclick="answerHandleClick(event)"
+                >
+                    ANSWER #3
+                </button>
+            </div>
+            <button onclick="nextQuestionBtnHandleClick(event)">Next</button>
+        </section>
+        <footer>
+            <p>Femhoot 2022</p>
+        </footer>
+        <script src="scripts/facts.js"></script>
+        <script src="scripts/quiz.js"></script>
+    </body>
 </html>

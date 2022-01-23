@@ -207,19 +207,19 @@ function answerHandleClick(event) {
 
     //feedback for user
     if (question.checkboxOne.id === question.solution) {
-        answerOneButton.style.backgroundColor = "green";
+        answerOneButton.style.backgroundColor = "#379634";
     } else {
-        answerOneButton.style.backgroundColor = "red";
+        answerOneButton.style.backgroundColor = "#EB5E55";
     }
     if (question.checkboxTwo.id === question.solution) {
-        answerTwoButton.style.backgroundColor = "green";
+        answerTwoButton.style.backgroundColor = "#379634";
     } else {
-        answerTwoButton.style.backgroundColor = "red";
+        answerTwoButton.style.backgroundColor = "#EB5E55";
     }
     if (question.checkboxThree.id === question.solution) {
-        answerThreeButton.style.backgroundColor = "green";
+        answerThreeButton.style.backgroundColor = "#379634";
     } else {
-        answerThreeButton.style.backgroundColor = "red";
+        answerThreeButton.style.backgroundColor = "#EB5E55";
     }
 }
 

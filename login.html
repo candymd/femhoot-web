@@ -3,20 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Femhoot</title>
+    <link rel="stylesheet" href="styles/login.css">
 </head>
 <body>
-<div>
-    <h1>What do you know about badass women?</h1>
-    <img src="" alt=""/>
+<div class="text">
+    <h1>Femhoot</h1>
+    <p>What do you know about women in tech?</p>
 </div>
-<div class="login">
- <h2>Come find out!</h2>
-    <form id="login-form"> 
+<section class="main-container">
+<div class="left">
+    <div class="login">
+    <form id="login-form" class="login-form">
+        <h2>Login to play</h2>
+        <label for="name">Name</label>
         <input type="text" name="name" id="name" placeholder="Insert your name" required>
+        <label for="password">Password</label>
         <input type="password" name="password" id="password" placeholder="Insert your password" required>
-        <input type="submit" value="Play">
+        <input class="play" type="submit" value="Play">
     </form>
+    </div>
 </div>
+    <div>
+    <img class="main-illustration" src="./assets/main-illustration.svg" alt="woman coding"/>
+    </div>
+</section>
 <script src="main.js"></script>
 </body>
 </html>

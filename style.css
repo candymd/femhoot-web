@@ -5,7 +5,9 @@
 }
 
 body {
-    background: #845EC2;
+     background: url('./Colored\ Shapes.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
     display: flex;
     flex-direction: column;

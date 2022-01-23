@@ -115,6 +115,13 @@ function nextQuestionBtnHandleClick(event) {
     }
 }
 
+//Go home button
+function returnHome(event) {
+    event.preventDefault();
+    afterQuizSection.classList.add("display-none");
+    beforeQuizSection.classList.remove("display-none");
+}
+
 //Funciones auxiliares
 function startQuiz() {
     questionIndex = 0;
@@ -152,5 +159,9 @@ function calculateQuizScore() {
 }
 
 function calculateUserScore() {
-    return +sessionStorage.getItem("score") + calculateQuizScore();
+    const user = JSON.parse(sessionStorage.getItem("user"));
+    const userScore = user.score + calculateQuizScore();
+    const userUpdated = { ...user, score: userScore };
+    sessionStorage.setItem("user", JSON.stringify(userUpdated));
+    return userScore;
 }

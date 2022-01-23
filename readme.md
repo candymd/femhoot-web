@@ -7,9 +7,9 @@ Built with Javascript, HTML5 and CSS3.
 
 
 ## Authors
-- Carme Codina [@carmeco](https://github.com/carmeco)
-- Shannon Mettry [@ShannonIanthe](https://github.com/ShannonIanthe)
-- Candy Montero [@candymd](https://github.com/candymd)
-- Cristina Perdiguero [@cristina-perdiguero](https://github.com/cristina-perdiguero)
+- Carme Codina | [@carmeco](https://github.com/carmeco)
+- Shannon Mettry | [@ShannonIanthe](https://github.com/ShannonIanthe)
+- Candy Montero | [@candymd](https://github.com/candymd)
+- Cristina Perdiguero | [@cristina-perdiguero](https://github.com/cristina-perdiguero)
 
 

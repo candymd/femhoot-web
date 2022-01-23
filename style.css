@@ -115,13 +115,26 @@ button {
 }
 
 button:hover {
-    transform: scale(1.3);
+    transform: scale(1.2);
+}
+
+.next {
+    width: 160px;
+    font-weight: bold;
 }
 
 
 footer {
     position: relative;
+    text-align: center;
 }
+
+.footer-info  {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
 
 /* Footer */
 footer {
@@ -137,7 +150,6 @@ footer p {
 
 footer a {
     text-decoration: none;
-    color: teal;
 }
 
 

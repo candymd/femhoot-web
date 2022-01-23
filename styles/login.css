@@ -111,12 +111,12 @@ input:focus {
 
 @media only screen and (max-width: 768px) {
 
-   img.main-illustration {
+    img.main-illustration {
         display: none;
     }
 
     .text {
-        font-size: 30px;
+        font-size: 20px;
         align-items: center;
         float: none;
         margin-bottom: 4rem;
@@ -132,11 +132,11 @@ input:focus {
 
         margin: 0 auto;
         height: 700px;
-        width: 900px;
+        width: 500px;
     }
 
     .login-form {
-        padding: 80px;
+        padding: 50px;
     }
 
     h2{
@@ -145,7 +145,7 @@ input:focus {
     }
 
     input {
-        width: 700px;
+        width: 400px;
         height: 40px;
     }
 
@@ -154,7 +154,7 @@ input:focus {
     }
 
     .play {
-        margin-top: 20px;
+        margin-top: 30px;
         width: 200px;
         height: 60px;
         font-size: 30px;
